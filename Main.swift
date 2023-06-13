@@ -11,26 +11,72 @@ struct Main: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Main")
-                NavigationLink(destination: Info()) {
-                    Text("to Info")
-                }
-                NavigationLink(destination: Disabilities()) {
-                    Text("To Disabilites")
-                }
-                NavigationLink(destination: Mental()) {
-                    Text("To Mental Health")
-                }
-                NavigationLink(destination: LGBTQIA_()) {
-                    Text("To LGBTQIA+")
-                }
-                NavigationLink(destination: Environment()) {
-                    Text("To Environment")
+                Text("Welcome to Rubber Ducks!")
+                    .font(.system(size: 40))
+                    .multilineTextAlignment(.center)
+                Spacer()
+                HStack {
+                    NavigationLink(destination: Info()) {
+                        Image("W")
+                            .resizable(resizingMode: .stretch)
+                            .scaledToFit()
+                            .frame(width: 0.2, height: 0.2)
+                    }
+                    NavigationLink(destination: Disabilities()) {
+                        Image("D")
+                            .resizable()
+                            .scaledToFit()
+                        
+                    }
+                    NavigationLink(destination: Mental()) {
+                        Image("M")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    NavigationLink(destination: LGBTQIA_()) {
+                        Image("L")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    NavigationLink(destination: Environment()) {
+                        Image("E")
+                            .resizable()
+                            .scaledToFit()
+                    }
                 }
             }
+            .padding(.all)
+                .toolbar {
+
+                }
+                .navigationTitle("Home")
+                .navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode.inline)
+                .navigationBarHidden(false)
+            
+//                Text("Main")
+//                NavigationLink(destination: Info()) {
+//                    Text("to Info")
+//                }
+//                NavigationLink(destination: Disabilities()) {
+//                    Text("To Disabilites")
+//                }
+//                NavigationLink(destination: Mental()) {
+//                    Text("To Mental Health")
+//                }
+//                NavigationLink(destination: LGBTQIA_()) {
+//                    Text("To LGBTQIA+")
+//                }
+//                NavigationLink(destination: Environment()) {
+//                    Text("To Environment")
+//                }
+                
+            }
         }
+//        .navigationTitle("Home")
+//        .navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode.inline)
+//        .navigationBarHidden(false)
     }
-}
+
 
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
