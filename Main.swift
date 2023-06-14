@@ -16,7 +16,6 @@ struct Main: View {
                 VStack {
                     Text("Welcome to Rubber Ducks!")
                         .font(.system(size: 40))
-                        .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
                         .multilineTextAlignment(.center)
                     Spacer()
                     HStack {

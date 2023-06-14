@@ -25,6 +25,8 @@
 		BD205ED82A38C25C0088BD84 /* L2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205ED72A38C25C0088BD84 /* L2.swift */; };
 		BD205EDA2A38C26A0088BD84 /* D1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205ED92A38C26A0088BD84 /* D1.swift */; };
 		BD205EDC2A38C2750088BD84 /* D2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205EDB2A38C2750088BD84 /* D2.swift */; };
+		BD82FC4E2A3A43360092A202 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82FC4D2A3A43360092A202 /* Constants.swift */; };
+		BD82FC502A3A43680092A202 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD82FC4F2A3A43680092A202 /* ColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		BD205ED72A38C25C0088BD84 /* L2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L2.swift; sourceTree = "<group>"; };
 		BD205ED92A38C26A0088BD84 /* D1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1.swift; sourceTree = "<group>"; };
 		BD205EDB2A38C2750088BD84 /* D2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D2.swift; sourceTree = "<group>"; };
+		BD82FC4D2A3A43360092A202 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD82FC4F2A3A43680092A202 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				BD205ECF2A38C2290088BD84 /* E2.swift */,
 				BD205ED12A38C2330088BD84 /* M1.swift */,
 				BD205ED32A38C23D0088BD84 /* M2.swift */,
+				BD82FC4D2A3A43360092A202 /* Constants.swift */,
+				BD82FC4F2A3A43680092A202 /* ColorPicker.swift */,
 				BD205ED52A38C2520088BD84 /* L1.swift */,
 				BD205ED72A38C25C0088BD84 /* L2.swift */,
 				BD205ED92A38C26A0088BD84 /* D1.swift */,
@@ -180,9 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD205EC82A38BF150088BD84 /* Mental.swift in Sources */,
+				BD82FC4E2A3A43360092A202 /* Constants.swift in Sources */,
 				BD205ED62A38C2520088BD84 /* L1.swift in Sources */,
 				BD205EC22A38BED40088BD84 /* Main.swift in Sources */,
 				BD205ED42A38C23D0088BD84 /* M2.swift in Sources */,
+				BD82FC502A3A43680092A202 /* ColorPicker.swift in Sources */,
 				BD205ECE2A38C2190088BD84 /* E1.swift in Sources */,
 				BD205ED82A38C25C0088BD84 /* L2.swift in Sources */,
 				BD205ECA2A38BF3C0088BD84 /* LGBTQIA+.swift in Sources */,
