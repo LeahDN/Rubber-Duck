@@ -52,10 +52,22 @@ struct D2: View {
                               currentLine.color = newColor
                           }
                   }
+                  Text("Finish")
+                      .font(.largeTitle)
+                      .offset(x: 0, y: 30)
+                      .foregroundColor(.blue)
+                      
+                  NavigationLink(destination: D22())
+                  {
+                      Text("Finish")
+                          .font(.title)
+                          .fontWeight(.bold)
+                          .foregroundColor(.blue)
+                      .offset(x: 0, y: 700)}
               }
               .frame(minWidth: 200, minHeight:200)
               .padding(.trailing)
-              Image("Place")
+              Image("sun")
                   .resizable()
                   .padding()
                   .scaledToFit()

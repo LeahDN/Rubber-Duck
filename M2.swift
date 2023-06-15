@@ -19,13 +19,13 @@ struct M2: View {
   var body: some View {
       NavigationStack {
           ZStack{
+              
               Color("lightGray")
                   .ignoresSafeArea()
               VStack {
+            
+
                   
-//                  Button("Finish"){
-//                      theImage = ("duck2")
-//                      textTitle = ("More than 50 million Americans struggle with mental illness. Ways to help take care of you mental health is to Relax , Find ways to learn and be creative, [Maybe like this app], and connect with others.")}
                   
                   
                   Canvas{ context, size in
@@ -34,6 +34,7 @@ struct M2: View {
                           path.addLines(line.points)
                           context.stroke(path, with: .color(line.color), lineWidth: line.lineWidth)
                       }
+                      
                   }
                   .gesture(DragGesture(minimumDistance: 0, coordinateSpace:.local )
                     .onChanged({value in
@@ -58,6 +59,20 @@ struct M2: View {
                               newColor in
                               currentLine.color = newColor
                           }
+                      
+                  }
+                  Text("Finish")
+                      .font(.largeTitle)
+                      .offset(x: 0, y: 30)
+                      .foregroundColor(.blue)
+                      
+                  NavigationLink(destination: M22())
+                        {
+                            Text("Finish")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .foregroundColor(.blue)
+                                .offset(x: 0, y: 700)
                   }
               }
               .frame(minWidth: 200, minHeight:200)

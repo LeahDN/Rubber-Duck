@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0DB68C2A3B8CD7008B09F7 /* M22.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DB68B2A3B8CD7008B09F7 /* M22.swift */; };
+		BD0DB6942A3B9A8F008B09F7 /* M11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DB6932A3B9A8F008B09F7 /* M11.swift */; };
+		BD0DB6962A3B9DC1008B09F7 /* E11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DB6952A3B9DC1008B09F7 /* E11.swift */; };
+		BD0DB6982A3BA13B008B09F7 /* E22.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DB6972A3BA13B008B09F7 /* E22.swift */; };
+		BD0DB69A2A3BA32A008B09F7 /* D11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DB6992A3BA32A008B09F7 /* D11.swift */; };
+		BD0DB69C2A3BA560008B09F7 /* D22.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DB69B2A3BA560008B09F7 /* D22.swift */; };
+		BD0DB69E2A3BA693008B09F7 /* L11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DB69D2A3BA693008B09F7 /* L11.swift */; };
+		BD0DB6A02A3BA84F008B09F7 /* L22.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DB69F2A3BA84F008B09F7 /* L22.swift */; };
 		BD205EB42A38BE240088BD84 /* Rubber_DuckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205EB32A38BE240088BD84 /* Rubber_DuckApp.swift */; };
 		BD205EB62A38BE240088BD84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205EB52A38BE240088BD84 /* ContentView.swift */; };
 		BD205EB82A38BE250088BD84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD205EB72A38BE250088BD84 /* Assets.xcassets */; };
@@ -30,6 +38,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD0DB68B2A3B8CD7008B09F7 /* M22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M22.swift; sourceTree = "<group>"; };
+		BD0DB6932A3B9A8F008B09F7 /* M11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M11.swift; sourceTree = "<group>"; };
+		BD0DB6952A3B9DC1008B09F7 /* E11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E11.swift; sourceTree = "<group>"; };
+		BD0DB6972A3BA13B008B09F7 /* E22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E22.swift; sourceTree = "<group>"; };
+		BD0DB6992A3BA32A008B09F7 /* D11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D11.swift; sourceTree = "<group>"; };
+		BD0DB69B2A3BA560008B09F7 /* D22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D22.swift; sourceTree = "<group>"; };
+		BD0DB69D2A3BA693008B09F7 /* L11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L11.swift; sourceTree = "<group>"; };
+		BD0DB69F2A3BA84F008B09F7 /* L22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L22.swift; sourceTree = "<group>"; };
 		BD205EB02A38BE240088BD84 /* Rubber Duck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rubber Duck.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD205EB32A38BE240088BD84 /* Rubber_DuckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rubber_DuckApp.swift; sourceTree = "<group>"; };
 		BD205EB52A38BE240088BD84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +83,13 @@
 		BD205EA72A38BE240088BD84 = {
 			isa = PBXGroup;
 			children = (
+				BD0DB69F2A3BA84F008B09F7 /* L22.swift */,
+				BD0DB69D2A3BA693008B09F7 /* L11.swift */,
+				BD0DB69B2A3BA560008B09F7 /* D22.swift */,
+				BD0DB6992A3BA32A008B09F7 /* D11.swift */,
+				BD0DB6972A3BA13B008B09F7 /* E22.swift */,
+				BD0DB6952A3B9DC1008B09F7 /* E11.swift */,
+				BD0DB68B2A3B8CD7008B09F7 /* M22.swift */,
 				BD205ECD2A38C2190088BD84 /* E1.swift */,
 				BD205ECF2A38C2290088BD84 /* E2.swift */,
 				BD205ED12A38C2330088BD84 /* M1.swift */,
@@ -103,6 +126,7 @@
 				BD205EB52A38BE240088BD84 /* ContentView.swift */,
 				BD205EB72A38BE250088BD84 /* Assets.xcassets */,
 				BD205EB92A38BE250088BD84 /* Preview Content */,
+				BD0DB6932A3B9A8F008B09F7 /* M11.swift */,
 			);
 			path = "Rubber Duck";
 			sourceTree = "<group>";
@@ -185,16 +209,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0DB69A2A3BA32A008B09F7 /* D11.swift in Sources */,
 				BD205EC82A38BF150088BD84 /* Mental.swift in Sources */,
 				BD82FC4E2A3A43360092A202 /* Constants.swift in Sources */,
+				BD0DB6962A3B9DC1008B09F7 /* E11.swift in Sources */,
+				BD0DB69C2A3BA560008B09F7 /* D22.swift in Sources */,
 				BD205ED62A38C2520088BD84 /* L1.swift in Sources */,
 				BD205EC22A38BED40088BD84 /* Main.swift in Sources */,
 				BD205ED42A38C23D0088BD84 /* M2.swift in Sources */,
+				BD0DB6A02A3BA84F008B09F7 /* L22.swift in Sources */,
 				BD82FC502A3A43680092A202 /* ColorPicker.swift in Sources */,
+				BD0DB69E2A3BA693008B09F7 /* L11.swift in Sources */,
 				BD205ECE2A38C2190088BD84 /* E1.swift in Sources */,
+				BD0DB68C2A3B8CD7008B09F7 /* M22.swift in Sources */,
+				BD0DB6982A3BA13B008B09F7 /* E22.swift in Sources */,
 				BD205ED82A38C25C0088BD84 /* L2.swift in Sources */,
 				BD205ECA2A38BF3C0088BD84 /* LGBTQIA+.swift in Sources */,
 				BD205ECC2A38BF650088BD84 /* Disabilities.swift in Sources */,
+				BD0DB6942A3B9A8F008B09F7 /* M11.swift in Sources */,
 				BD205EDA2A38C26A0088BD84 /* D1.swift in Sources */,
 				BD205EDC2A38C2750088BD84 /* D2.swift in Sources */,
 				BD205EC42A38BEE10088BD84 /* Info.swift in Sources */,
@@ -334,6 +366,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rubber-Duck-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +396,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rubber-Duck-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

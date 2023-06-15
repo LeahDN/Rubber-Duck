@@ -18,7 +18,7 @@ struct Main: View {
                 
                 VStack {
                     Text("Welcome to Rubber Ducks!")
-//            .font(Font.custom("PaperClip-y15", size: 40))
+                        .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .padding(.all)
                     Spacer()

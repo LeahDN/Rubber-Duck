@@ -14,9 +14,14 @@ struct Mental: View {
                 Text("Mental Health")
                 NavigationLink(destination: M1()) {
                     Image("mental1")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                       
                 }
                 NavigationLink(destination: M2()) {
                     Image("mental2")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
                 }
 
             }
