@@ -13,10 +13,10 @@ struct Mental: View {
             VStack {
                 Text("Mental Health")
                 NavigationLink(destination: M1()) {
-                    Text("First Drawing")
+                    Image("mental1")
                 }
                 NavigationLink(destination: M2()) {
-                    Text("Second Drawing")
+                    Image("mental2")
                 }
 
             }

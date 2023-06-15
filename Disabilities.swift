@@ -10,22 +10,33 @@ import SwiftUI
 struct Disabilities: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Disabilities")
-                NavigationLink(destination: D1()) {
-                    Text("First Drawing")
+            
+            
+            ZStack {
+//                Image("yellow")
+//                    .resizable()
+//                    .ignoresSafeArea()
+                Image("news paper bg")
+                
+                
+                VStack {
+                    Text("Disabilities")
+                        .fontWeight(.semibold)
+                    NavigationLink(destination: D1()) {
+                        Image("disabilities1")
+                    }
+                    NavigationLink(destination: D2()) {
+                        Image("disabilities2")
+                    }
+                    
                 }
-                NavigationLink(destination: D2()) {
-                    Text("Second Drawing")
-                }
-
             }
         }
     }
-}
-
-struct Disabilities_Previews: PreviewProvider {
-    static var previews: some View {
-        Disabilities()
+    
+    struct Disabilities_Previews: PreviewProvider {
+        static var previews: some View {
+            Disabilities()
+        }
     }
 }

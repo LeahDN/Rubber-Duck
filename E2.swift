@@ -55,7 +55,7 @@ struct E2: View {
               }
               .frame(minWidth: 200, minHeight:200)
               .padding(.trailing)
-              Image("Place")
+              Image("environment2")
                   .resizable()
                   .padding()
                   .scaledToFit()

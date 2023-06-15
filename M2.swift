@@ -15,12 +15,19 @@ struct M2: View {
   @State private var lines: [Line2] = []
   @State private var selectedColor: Color = .red
   @State private var thickness: Double = 0.0
+//    @State private var
   var body: some View {
       NavigationStack {
           ZStack{
               Color("lightGray")
                   .ignoresSafeArea()
               VStack {
+                  
+//                  Button("Finish"){
+//                      theImage = ("duck2")
+//                      textTitle = ("More than 50 million Americans struggle with mental illness. Ways to help take care of you mental health is to Relax , Find ways to learn and be creative, [Maybe like this app], and connect with others.")}
+                  
+                  
                   Canvas{ context, size in
                       for line in lines {
                           var path = Path()

@@ -13,10 +13,10 @@ struct LGBTQIA_: View {
             VStack {
                 Text("LGBTQIA+")
                 NavigationLink(destination: L1()) {
-                    Text("First Drawing")
+                    Image("LGBTQIA+1")
                 }
                 NavigationLink(destination: L2()) {
-                    Text("Second Drawing")
+                    Image("LGBTQIA+2")
                 }
 
             }

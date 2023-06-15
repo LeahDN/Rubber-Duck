@@ -55,20 +55,20 @@ struct E1: View {
               }
               .frame(minWidth: 200, minHeight:200)
               .padding(.trailing)
-              Image("Place")
+              Image("environment1")
                   .resizable()
                   .padding()
                   .scaledToFit()
                   .frame(width: 400, height: 400)
                   .offset(x:3, y:-175)
                   .opacity(0.5)
-              Button("Done?") {
-                  /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-              }
-//              .foregroundColor(Color)
-//              .padding(.horizontal)
-//              .buttonStyle(.borderedProminent)
-//              .tint(Color(hue: 0.141, saturation: 0.427, brightness: 0.961))
+//              Button("Done?") {
+//                  /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+//              }
+////              .foregroundColor(Color)
+////              .padding(.horizontal)
+////              .buttonStyle(.borderedProminent)
+////              .tint(Color(hue: 0.141, saturation: 0.427, brightness: 0.961))
           }
       }
   }

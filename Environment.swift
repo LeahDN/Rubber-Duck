@@ -13,10 +13,10 @@ struct Environment: View {
             VStack {
                 Text("Environment")
                 NavigationLink(destination: E1()) {
-                    Text("First Drawing")
+                    Image("environment1")
                 }
                 NavigationLink(destination: E2()) {
-                    Text("Second Drawing")
+                    Image("environment2")
                 }
 
             }

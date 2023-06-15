@@ -10,19 +10,17 @@ import SwiftUI
 struct Main: View {
     var body: some View {
         NavigationStack {
-            ZStack {
-                Image("Ducks")
-                    .resizable()
-                    .ignoresSafeArea()
-                Image("crumpled_paper_bg")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
-                    .padding()
+           ZStack {
+//              Image("yellow")                    .resizable()
+//                   .ignoresSafeArea()
+                Image("crumpled Paper bg")
+                  
                 
                 VStack {
                     Text("Welcome to Rubber Ducks!")
-                        .font(.system(size: 40))
+//            .font(Font.custom("PaperClip-y15", size: 40))
                         .multilineTextAlignment(.center)
+                        .padding(.all)
                     Spacer()
                     HStack {
                         NavigationLink(destination: Disabilities()) {
@@ -54,7 +52,9 @@ struct Main: View {
                     NavigationLink(destination: Info()) {
                         Image("W")
                             .resizable()
+                            .padding(.all)
                             .scaledToFit()
+                            .frame(width: 100.0, height: 100.0)
                     }
                 }
                 .navigationTitle("Home")
