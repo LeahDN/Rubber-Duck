@@ -23,6 +23,8 @@ struct L22: View {
                 Image("LDuck")
                     .resizable()
                     .frame(width: 500, height: 500)
+                NavigationLink(destination: Main()) {
+                    Text("Continue")
             }
         }
     }
