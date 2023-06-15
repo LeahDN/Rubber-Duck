@@ -16,52 +16,54 @@ struct M2: View {
   @State private var selectedColor: Color = .red
   @State private var thickness: Double = 0.0
   var body: some View {
-    ZStack{
-      Color("lightGray")
-        .ignoresSafeArea()
-      VStack {
-        Canvas{ context, size in
-          for line in lines {
-            var path = Path()
-            path.addLines(line.points)
-            context.stroke(path, with: .color(line.color), lineWidth: line.lineWidth)
+      NavigationStack {
+          ZStack{
+              Color("lightGray")
+                  .ignoresSafeArea()
+              VStack {
+                  Canvas{ context, size in
+                      for line in lines {
+                          var path = Path()
+                          path.addLines(line.points)
+                          context.stroke(path, with: .color(line.color), lineWidth: line.lineWidth)
+                      }
+                  }
+                  .gesture(DragGesture(minimumDistance: 0, coordinateSpace:.local )
+                    .onChanged({value in
+                        let newPoint =   value.location
+                        currentLine.points.append(newPoint)
+                        self.lines.append(currentLine)
+                    })
+                        .onEnded({value in
+                            self.currentLine = Line2(points: [], color: selectedColor, lineWidth: thickness)
+                        })
+                  )
+                  HStack {
+                      Slider(value: $thickness, in: 1...20){
+                          Text("Thickness")
+                      }.frame(maxWidth: 100)
+                          .onChange(of: thickness){newThickness in
+                              currentLine.lineWidth = newThickness
+                          }
+                      Divider()
+                      ColorPickerView(selectedColor: $selectedColor)
+                          .onChange(of: selectedColor) {
+                              newColor in
+                              currentLine.color = newColor
+                          }
+                  }
+              }
+              .frame(minWidth: 200, minHeight:200)
+              .padding(.trailing)
+              Image("mentalHealth2")
+                  .resizable()
+                  .padding()
+                  .scaledToFit()
+                  .frame(width: 500, height: 500)
+                  .offset(x:-10, y:-175)
+                  .opacity(0.5)
           }
-        }
-        .gesture(DragGesture(minimumDistance: 0, coordinateSpace:.local )
-          .onChanged({value in
-            let newPoint =   value.location
-            currentLine.points.append(newPoint)
-            self.lines.append(currentLine)
-          })
-            .onEnded({value in
-              self.currentLine = Line2(points: [], color: selectedColor, lineWidth: thickness)
-            })
-        )
-        HStack {
-          Slider(value: $thickness, in: 1...20){
-            Text("Thickness")
-          }.frame(maxWidth: 100)
-            .onChange(of: thickness){newThickness in
-              currentLine.lineWidth = newThickness
-            }
-          Divider()
-          ColorPickerView(selectedColor: $selectedColor)
-            .onChange(of: selectedColor) {
-              newColor in
-              currentLine.color = newColor
-            }
-        }
       }
-      .frame(minWidth: 200, minHeight:200)
-      .padding(.trailing)
-      Image("mentalHealth2")
-        .resizable()
-        .padding()
-        .scaledToFit()
-        .frame(width: 500, height: 500)
-        .offset(x:-10, y:-175)
-        .opacity(0.5)
-    }
   }
   struct M2_Previews: PreviewProvider {
     static var previews: some View {

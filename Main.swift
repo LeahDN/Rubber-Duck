@@ -11,7 +11,13 @@ struct Main: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                //Image("Background")
+                Image("Ducks")
+                    .resizable()
+                    .ignoresSafeArea()
+                Image("crumpled_paper_bg")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .padding()
                 
                 VStack {
                     Text("Welcome to Rubber Ducks!")
@@ -19,12 +25,6 @@ struct Main: View {
                         .multilineTextAlignment(.center)
                     Spacer()
                     HStack {
-                        NavigationLink(destination: Info()) {
-                            Image("W")
-                                .resizable(resizingMode: .stretch)
-                                .scaledToFit()
-                                .frame(width: 0.2, height: 0.2)
-                        }
                         NavigationLink(destination: Disabilities()) {
                             Image("D")
                                 .resizable()
@@ -51,28 +51,15 @@ struct Main: View {
                 .padding(.all)
             
                 .toolbar {
-                
+                    NavigationLink(destination: Info()) {
+                        Image("W")
+                            .resizable()
+                            .scaledToFit()
+                    }
                 }
                 .navigationTitle("Home")
                 .navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode.inline)
                 .navigationBarHidden(false)
-                
-                //                Text("Main")
-                //                NavigationLink(destination: Info()) {
-                //                    Text("to Info")
-                //                }
-                //                NavigationLink(destination: Disabilities()) {
-                //                    Text("To Disabilites")
-                //                }
-                //                NavigationLink(destination: Mental()) {
-                //                    Text("To Mental Health")
-                //                }
-                //                NavigationLink(destination: LGBTQIA_()) {
-                //                    Text("To LGBTQIA+")
-                //                }
-                //                NavigationLink(destination: Environment()) {
-                //                    Text("To Environment")
-                //                }
                 
             }
             .frame(height: nil)
