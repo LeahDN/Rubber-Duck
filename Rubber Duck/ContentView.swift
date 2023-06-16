@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var name = " "
+    @State private var inputName = name = name()
     @State var num = 0
     var body: some View {
         NavigationStack {
@@ -21,11 +21,11 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         .padding([.top, .leading, .trailing], 50.0)
                     
-                    TextField("Username", text: $name)
+                    TextField("Username", text: $inputName)
                         .font(.system(size: 60, weight: .light, design: .default))
                         .multilineTextAlignment(.center)
                     
-                    NavigationLink(destination: Main()) {
+                    NavigationLink(destination: Main(name ; $inputName)) {
                         Image("grey arrow")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
@@ -48,6 +48,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(name; $name)
     }
 }

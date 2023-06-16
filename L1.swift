@@ -18,8 +18,9 @@ struct L1: View {
   var body: some View {
       NavigationStack {
           ZStack{
-              Color("lightGray")
+              Color("lightRed")
                   .ignoresSafeArea()
+              Image("lined paper bg")
               VStack {
                   Canvas{ context, size in
                       for line in lines {

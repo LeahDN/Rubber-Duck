@@ -30,7 +30,7 @@ struct Disabilities: View {
                             .padding([.top, .leading, .trailing], 50.0)
                     }
                     NavigationLink(destination: D2()) {
-                        Image("disabilities2")
+                        Image("sun")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .padding([.leading, .bottom, .trailing], 50.0)

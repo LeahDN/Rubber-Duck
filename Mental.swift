@@ -23,7 +23,7 @@ struct Mental: View {
                         .padding(.top, 30.0)
                     
                     NavigationLink(destination: M1()) {
-                        Image("mental1")
+                        Image("mentalHealth1")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .padding(.horizontal, 50.0)
@@ -31,7 +31,7 @@ struct Mental: View {
                     }
                     .padding()
                     NavigationLink(destination: M2()) {
-                        Image("mental2")
+                        Image("mentalHealth2")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .padding([.leading, .bottom, .trailing], 50.0)

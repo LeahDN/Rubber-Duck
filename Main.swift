@@ -11,7 +11,8 @@ import SwiftUI
 
 struct Main: View {
     
-    //@Binding var Name ; " "
+    //@State var name = " "
+    @Binding var inputName : name = name()
     
     var body: some View {
         NavigationStack {
@@ -22,7 +23,8 @@ struct Main: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    Text("Welcome to Rubber Ducks <<name>>")
+                    Spacer()
+                    Text("Welcome to Rubber Ducks \(name)")
                         .font(.system(size: 50, weight: .light, design: .default))
                         .multilineTextAlignment(.center)
                         .padding(.all)
@@ -95,6 +97,6 @@ struct Main: View {
 
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
-        Main()
+        Main(name; $name)
     }
 }

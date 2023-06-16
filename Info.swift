@@ -12,6 +12,11 @@ struct Info: View {
         ZStack {
             Image("crumpled Paper bg")
                 .ignoresSafeArea()
+            VStack{
+                Text("Info")
+                
+            
+            }
             
         }
         

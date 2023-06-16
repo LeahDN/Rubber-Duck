@@ -20,8 +20,9 @@ struct M2: View {
       NavigationStack {
           ZStack{
               
-              Color("lightGray")
+              Color("lightYellow")
                   .ignoresSafeArea()
+              Image("crumpled Paper bg")
               VStack {
             
 
