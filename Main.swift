@@ -4,8 +4,7 @@
 //
 //  Created by Scholar on 6/13/23.
 //
-//this look great
-// this is more to commit
+
 
 import SwiftUI
 
