@@ -14,9 +14,15 @@ struct Environment: View {
                 Text("Environment")
                 NavigationLink(destination: E1()) {
                     Image("environment1")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.all, 50.0)
                 }
                 NavigationLink(destination: E2()) {
                     Image("environment2")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.all, 50.0)
                 }
 
             }

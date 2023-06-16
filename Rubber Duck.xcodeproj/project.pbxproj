@@ -18,7 +18,6 @@
 		BD205EB42A38BE240088BD84 /* Rubber_DuckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205EB32A38BE240088BD84 /* Rubber_DuckApp.swift */; };
 		BD205EB62A38BE240088BD84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205EB52A38BE240088BD84 /* ContentView.swift */; };
 		BD205EB82A38BE250088BD84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD205EB72A38BE250088BD84 /* Assets.xcassets */; };
-		BD205EBB2A38BE250088BD84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD205EBA2A38BE250088BD84 /* Preview Assets.xcassets */; };
 		BD205EC22A38BED40088BD84 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205EC12A38BED40088BD84 /* Main.swift */; };
 		BD205EC42A38BEE10088BD84 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205EC32A38BEE10088BD84 /* Info.swift */; };
 		BD205EC62A38BF040088BD84 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD205EC52A38BF040088BD84 /* Environment.swift */; };
@@ -197,7 +196,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD205EBB2A38BE250088BD84 /* Preview Assets.xcassets in Resources */,
 				BD205EB82A38BE250088BD84 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +363,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Rubber Duck/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Rubber-Duck-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -395,7 +392,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Rubber Duck/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Rubber-Duck-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

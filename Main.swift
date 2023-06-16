@@ -10,6 +10,9 @@
 import SwiftUI
 
 struct Main: View {
+    
+    //@Binding var Name ; " "
+    
     var body: some View {
         NavigationStack {
            ZStack {
@@ -19,8 +22,8 @@ struct Main: View {
                   
                 
                 VStack {
-                    Text("Welcome to Rubber Ducks!")
-                        .font(.largeTitle)
+                    Text("Welcome to Rubber Ducks")
+                        .font(.system(size: 55, weight: .light, design: .default))
                         .multilineTextAlignment(.center)
                         .padding(.all)
                     Spacer()

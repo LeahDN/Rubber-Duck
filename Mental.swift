@@ -16,12 +16,14 @@ struct Mental: View {
                     Image("mental1")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .padding(.all, 50.0)
                        
                 }
                 NavigationLink(destination: M2()) {
                     Image("mental2")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .padding(.all, 50.0)
                 }
 
             }

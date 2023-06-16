@@ -24,9 +24,15 @@ struct Disabilities: View {
                         .fontWeight(.semibold)
                     NavigationLink(destination: D1()) {
                         Image("disabilities1")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .padding(.all, 50.0)
                     }
                     NavigationLink(destination: D2()) {
                         Image("disabilities2")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .padding(.all, 50.0)
                     }
                     
                 }
