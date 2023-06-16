@@ -15,18 +15,35 @@ struct Main: View {
     
     var body: some View {
         NavigationStack {
-           ZStack {
-//              Image("yellow")                    .resizable()
-//                   .ignoresSafeArea()
+            ZStack {
+                //              Image("yellow")                    .resizable()
+                //                   .ignoresSafeArea()
                 Image("crumpled Paper bg")
-                  
+                    .ignoresSafeArea()
                 
                 VStack {
-                    Text("Welcome to Rubber Ducks")
-                        .font(.system(size: 55, weight: .light, design: .default))
+                    Text("Welcome to Rubber Ducks <<name>>")
+                        .font(.system(size: 50, weight: .light, design: .default))
                         .multilineTextAlignment(.center)
                         .padding(.all)
+                    Text("This is a coloring app to help learn about hard subjects. This is your main page. Below you will find ducks about differnat topics. Click on these for coloring pages about them. Above you will find a grey duck icon. This will take you to our story/informaion page")
+                        .font(.system(size: 25, weight: .light, design: .default))
+                        .multilineTextAlignment(.center)
+                        .padding([.leading, .bottom, .trailing])
                     Spacer()
+                    
+                    HStack{
+                        Text("Disabilities")
+                        
+                        Text("Mental health")
+                        
+                        Text("LGBTQIA+")
+                        
+                        Text("Evironment")
+                        
+                        
+                        
+                        }
                     HStack {
                         NavigationLink(destination: Disabilities()) {
                             Image("D")
@@ -51,6 +68,7 @@ struct Main: View {
                         }
                     }
                 }
+            }
                 .padding(.all)
             
                 .toolbar {
@@ -73,7 +91,6 @@ struct Main: View {
 //        .navigationTitle("Home")
 //        .navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode.inline)
 //        .navigationBarHidden(false)
-    }
 
 
 struct Main_Previews: PreviewProvider {

@@ -13,26 +13,27 @@ struct Disabilities: View {
             
             
             ZStack {
-//                Image("yellow")
-//                    .resizable()
-//                    .ignoresSafeArea()
-                Image("news paper bg")
+                Color("lightBlue")
+                    .ignoresSafeArea()
+                Image("lined paper bg")
                 
                 
                 VStack {
                     Text("Disabilities")
+                        .font(.system(size: 50, weight: .light, design: .default))
                         .fontWeight(.semibold)
+                        .padding(.top, 30.0)
                     NavigationLink(destination: D1()) {
                         Image("disabilities1")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
-                            .padding(.all, 50.0)
+                            .padding([.top, .leading, .trailing], 50.0)
                     }
                     NavigationLink(destination: D2()) {
                         Image("disabilities2")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
-                            .padding(.all, 50.0)
+                            .padding([.leading, .bottom, .trailing], 50.0)
                     }
                     
                 }

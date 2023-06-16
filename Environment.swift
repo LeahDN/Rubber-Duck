@@ -10,21 +10,31 @@ import SwiftUI
 struct Environment: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Environment")
-                NavigationLink(destination: E1()) {
-                    Image("environment1")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .padding(.all, 50.0)
+            ZStack {
+                Color("lightGreen")
+                    .ignoresSafeArea()
+                Image("lined paper bg")
+                
+                
+                VStack {
+                    Text("Environment")
+                        .font(.system(size: 50, weight: .light, design: .default))
+                        .fontWeight(.semibold)
+                        .padding(.top, 30.0)
+                    NavigationLink(destination: E1()) {
+                        Image("environment1")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .padding(.horizontal, 50.0)
+                    }
+                    NavigationLink(destination: E2()) {
+                        Image("environment2")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .padding([.leading, .bottom, .trailing], 50.0)
+                    }
+                    
                 }
-                NavigationLink(destination: E2()) {
-                    Image("environment2")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .padding(.all, 50.0)
-                }
-
             }
         }
     }

@@ -22,9 +22,12 @@ struct D11: View {
                     .padding()
                 Image("disabilityDuck")
                     .resizable()
-                    .frame(width: 500, height: 500)
+                    .frame(width: 400, height: 400)
                 NavigationLink(destination: Main()) {
-                    Text("Continue")
+                    Image("grey arrow")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 150.0, height: 60.0)
                 }
             }
         }
