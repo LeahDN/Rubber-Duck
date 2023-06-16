@@ -25,10 +25,12 @@ struct L22: View {
                     .frame(width: 500, height: 500)
                 NavigationLink(destination: Main()) {
                     Text("Continue")
+                }
             }
         }
     }
 }
+
 struct L22_Previews: PreviewProvider {
     static var previews: some View {
         L22()

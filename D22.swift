@@ -25,6 +25,7 @@ struct D22: View {
                     .frame(width: 500, height: 500)
                 NavigationLink(destination: Main()) {
                     Text("Continue")
+                }
             }
         }
     }
